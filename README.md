@@ -1,44 +1,55 @@
-# 💰 Expense Tracker App 📱
+🌐 API-Based App
+An iOS application that interacts with an external API to fetch and display data, built using Swift, SwiftUI, and Combine.
+📌 Features
+Fetch Data from API: Retrieve and display real-time data from an external API.
+SwiftUI Interface: Modern and responsive UI.
+Combine Framework: Handles asynchronous API calls efficiently.
+Error Handling: Gracefully manages network failures.
+Dynamic Data Parsing: Uses Codable for seamless JSON decoding.
+🛠️ Technologies Used
+Swift
+SwiftUI
+Combine
+URLSession
+MVVM Architecture
+(Add screenshots of your app here)
+ ![Uploading Untitled design.png…]()
 
-An **iOS Expense Tracker** application built with ❤️ using **Swift**, **SwiftUI**, **CoreData**, and navigation concepts. This app helps users track their expenses, manage their budget, and perform **CRUD** (Create, Read, Update, Delete) operations seamlessly.
+🚀 Getting Started
+Prerequisites
+Xcode (Latest Version)
+iOS 14+ device or simulator
+Internet connection
+Installation
+Clone the repository
 
----
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/APIApp.git
+Open the project
 
-## 🚀 Features
+Open the .xcodeproj file in Xcode.
+Set up API Configuration
 
-- **🔐 User Authentication**: Secure login screen for user authentication.
-- **💸 Expense Management**:
-  - ➕ Add new expenses with details like title, amount, category, and date.
-  - 📋 View a list of all expenses.
-  - ✏️ Edit existing expenses.
-  - 🗑️ Delete expenses.
-- **📊 Budget Tracking**: Manage and track your budget by viewing total expenses.
-- **💾 CoreData Integration**: Persistent storage for expense data using CoreData.
-- **🎨 SwiftUI**: Modern and declarative UI built with SwiftUI.
-- **🧭 Navigation**: Seamless navigation between screens using SwiftUI's navigation concepts.
+Replace YOUR_API_ENDPOINT in NetworkManager.swift with your actual API URL.
+Build and Run
 
----
+Select an iOS simulator or device and press Cmd + R.
+📂 Project Structure
+graphql
+Copy
+Edit
+📂 APIApp
+ ┣ 📂 Models        # Data models (Codable)
+ ┣ 📂 Views         # SwiftUI UI components
+ ┣ 📂 ViewModels    # Business logic (MVVM)
+ ┣ 📂 Networking    # API calls using URLSession & Combine
+ ┣ 📂 Resources     # Assets & configurations
+ ┣ 📜 APIApp.swift  # App entry point
+ ┗ 📜 README.md     # Project documentation
+🤝 Contributing
+Contributions are welcome! Feel free to open an issue or submit a pull request.
 
-## 📸 Screenshots
-![Image](https://github.com/user-attachments/assets/5c7fb386-3cad-4962-b498-6b717f16d025)
-
-| Login Screen | Expense List | Add Expense | Edit Expense |
-|--------------|--------------|-------------|--------------|
-| ![Login Screen](screenshots/login.png) | ![Expense List](screenshots/expense_list.png) | ![Add Expense](screenshots/add_expense.png) | ![Edit Expense](screenshots/edit_expense.png) |
-
----
-
-## 🛠️ Technologies Used
-
-- **Swift**: The primary programming language used for development.
-- **SwiftUI**: For building the user interface.
-- **CoreData**: For local data persistence and management.
-- **Xcode**: The IDE used for development.
-
----
-
-## 📥 Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/expense-tracker-app.git
+📜 License
+This project is licensed under the MIT License - see the LICENSE file for details.
